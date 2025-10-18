@@ -53,8 +53,8 @@ Przedstawienie podstawowych pojęć i stosowanych rozwiązań występujących w 
 | ------- |------------------------------------------| 
 | **1.**  | Wprowadzenie do Javy - part I            | 
 | **2.**  | Wprowadzenie do Javy - part II           | 
-| **3.**  | Klasa, obiekty, hermetyzacja, pakiety    | 
-| **4.**  | Hermetyzacja cd, konstruktor, statyczność| 
+| **3.**  | Klasa, obiekty, konstruktory             | 
+| **4.**  | Pakiety, hermetyzacja, statyczność       | 
 | **5.**  | Dziedziczenie                            | 
 | **6.**  | Polimorfizm                              | 
 | **7.**  | **Kolokwium I**                          | 
