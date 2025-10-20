@@ -34,6 +34,14 @@ public class NazwaKlasy {
 }
 ```
 
+Pojawia się pytanie- kiedy trzeba używać słowa kluczowego `this`?
+
+Słowa kluczowego `this` w Javie używamy do *odwoływania się do bieżącego obiektu* w metodzie lub konstruktorze. Pozwala to na dostęp do zmiennych instancji, metod i innych konstruktorów danego obiektu. Jest to szczególnie przydatne do odróżnienia zmiennych lokalnych lub parametrów od pól obiektu oraz do wywołania innego konstruktora w tej samej klasie. 
+
+Nie musisz używać `this` w Javie, gdy nazwa zmiennej lokalnej (np. parametru metody) nie koliduje z nazwą zmiennej instancji. W takich przypadkach kompilator domyślnie odnosi się do zmiennej instancji, a `this` jest opcjonalne. Jest ono również zbędne, jeśli nie potrzebujesz odwołać się do bieżącego obiektu w celu wywołania jego metody lub konstruktora, przypisania go do innej zmiennej lub gdy jego użycie nie jest konieczne do rozróżnienia między zmienną lokalną a polem klasy.
+
+Dobrze jest natomiast używać `this` gdy odnosimy się do pola bądź metody obiektu danej klasy z przyczyn czytelności kodu - mamy wtedy pewność, że używamy obiektu, a nie jakiegoś powszechnie dostępnego elementu bądź przekazanego parametru o którym zapomnieliśmy.
+
 ---
 
 ### 3. Przykład – Klasa `Samochod`
