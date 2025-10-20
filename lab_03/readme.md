@@ -156,7 +156,7 @@ public class KontoBankowe {
 }
 ```
 
-### Użycie w `main`:
+#### Użycie w `main`:
 
 ```java
 public class Main {
@@ -182,7 +182,7 @@ Brak środków na koncie!
 
 ---
 
-### Słowa kluczowe w podstawach
+#### Słowa kluczowe w podstawach
 
 | Element       | Co robi                                   |
 | ------------- | ----------------------------------------- |
