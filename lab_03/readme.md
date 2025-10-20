@@ -1,6 +1,6 @@
 # **Programowanie Obiektowe – Java (2025Z)**
 
-## **Klasa, obiekty, hermetyzacja, pakiety**
+## **Klasa, obiekty, konstruktory**
 
 ### 1. Co to jest klasa?
 
