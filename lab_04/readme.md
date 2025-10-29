@@ -621,11 +621,6 @@ public class Zewnetrzna {
 Witaj z klasy wewnętrznej!
 ```
 
-Świetne pytanie, Adrianno 👩‍🏫 — **import statyczny** to często pomijany, ale bardzo przydatny temat, zwłaszcza gdy uczymy studentów o **czytelności i strukturze kodu**.
-Zróbmy to tak, jakbyś tłumaczyła to na zajęciach — krok po kroku, z przykładami, tabelą i jednym małym ćwiczeniem.
-
----
-
 ### 9. Import statyczny w języku Java
 
 Normalnie, kiedy chcemy użyć klasy lub metody z innego pakietu, piszemy np.:
