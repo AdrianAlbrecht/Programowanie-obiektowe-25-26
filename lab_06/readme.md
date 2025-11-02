@@ -521,20 +521,19 @@ To właśnie **polimorfizm w praktyce**.
 
 ## Zadania
 1.  Wykonaj poniższe czynności:
-   - Zdefiniuj klasę Person, która posiada następujące pola: firstName, lastName i age. 
-   - Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do
+    - Zdefiniuj klasę Person, która posiada następujące pola: firstName, lastName i age. 
+    - Napisz konstruktor, który przyjmuje trzy argumenty i waliduje je przed przypisaniem do
        odpowiednich pól.
      - Wiekosoby (age) nie powinien być ujemny. W przypadku podania wartości ujemnej
          dla wieku, ustaw wiek osoby na zero.
      - PolafirstName i lastName nie powinny być puste ani równać się null. W przypadku
-         podania pustego napisu lub null dla tych pól, ustaw odpowiednio pusty napis.
-         
-   - Dodaj metodę toString(), która zwraca informacje o osobie w formacie: "Person:
+         podania pustego napisu lub null dla tych pól, ustaw odpowiednio pusty napis. 
+     - Dodaj metodę toString(), która zwraca informacje o osobie w formacie: "Person:
        [firstName] [lastName], Age: [age].". Zwróć uwagę na wielkość liter i znaki interpunkcyjne. 
-   - Dodaj metodę equals(), która porównuje dwie osoby na podstawie ich pól firstName,
+     - Dodaj metodę equals(), która porównuje dwie osoby na podstawie ich pól firstName,
        lastName i age. Dwie osoby są uważane za identyczne, jeśli wszystkie trzy pola są takie
        same. 
-   - Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda
+     - Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda
        ta powinna być zgodna z metodą equals()
 2.  Utwórz klasę Property z polami address, size i price. Utwórz klasy House i
     Apartment, które dziedziczą po klasie Property. Klasa House powinna mieć dodatkowe
@@ -547,18 +546,35 @@ To właśnie **polimorfizm w praktyce**.
     mieć dodatkowe pole gameWorld. Dodaj konstruktory, metody gettery i settery(tak, aby spełnione były zasady hermetyzacji), metodę
     toString(), equals() oraz hashCode() dla każdej z klas. Napisz program testujący
     zdefiniowane klasy i metody.
-4.  Wykonaj poniższe czynności:
+4. Wykonaj poniższe czynności:
    - Stwórz klasę Gradebook z prywatnymi polami: firstName, lastName oraz grades (jako
-       ArrayList typu int). Dodaj konstruktor, który przyjmuje firstName i lastName jako
-       argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody addGrade(int
-       grade) i removeGrade(int index), które odpowiednio dodają lub usuwają ocenę z listy
-       ocen. Dodaj również metodę averageGrade() do obliczania i zwracania średniej ocen. 
+          ArrayList typu int). Dodaj konstruktor, który przyjmuje firstName i lastName jako
+          argumenty. Dodaj metody dostępowe (gettery i settery) oraz metody addGrade(int
+          grade) i removeGrade(int index), które odpowiednio dodają lub usuwają ocenę z listy
+          ocen. Dodaj również metodę averageGrade() do obliczania i zwracania średniej ocen. 
    - Dodaj metodę toString(), która zwraca informacje o uczniu, średniej jego ocen oraz
-       wszystkich ocenach w formacie: "Gradebook for [firstName] [lastName]: Average
-       Grade = [averageGrade], Grades: [grade1, grade2, ...].". Zwróć uwagę na
-       wielkość liter i znaki interpunkcyjne. 
+          wszystkich ocenach w formacie: "Gradebook for [firstName] [lastName]: Average
+          Grade = [averageGrade], Grades: [grade1, grade2, ...].". Zwróć uwagę na
+          wielkość liter i znaki interpunkcyjne. 
    - Dodaj metodę equals(), która porównuje dwa obiekty klasy Gradebook na podstawie
-       ich pól firstName, lastName oraz zawartości listy grades. Dwa dzienniczki są uważane
-       za identyczne, jeśli mają takie same imię, nazwisko i identyczny zestaw ocen (z uwzględnieniem kolejności). 
+          ich pól firstName, lastName oraz zawartości listy grades. Dwa dzienniczki są uważane
+          za identyczne, jeśli mają takie same imię, nazwisko i identyczny zestaw ocen (z uwzględnieniem kolejności). 
    - Dodaj metodę hashCode(), która generuje kod hash dla odpowiedniego obiektu. Metoda
-       ta powinna być zgodna z metodą equals()
+          ta powinna być zgodna z metodą equals()
+5. Utwórz klasę abstrakcyjną Osoba z polami:
+   - String imie 
+   - String nazwisko 
+   - LocalDate dataRozpoczecia
+   
+    oraz metodą abstrakcyjną getOpis(), która zwraca typ tekstowy String.
+   Utwórz klasy pochodne: Student, PracownikNaukowy, PracownikAdministracyjny. 
+Każda z nich implementuje metodę getOpis() w inny sposób.
+
+    W klasie Main:
+   - Utwórz kilka obiektów różnych klas. 
+   - Umieść je w liście typu ArrayList<Osoba>. 
+   - Wyświetl opisy wszystkich osób używając metody getOpis().
+   - Dodaj metodę statyczną *long roznicaLat(Osoba a, Osoba b)*, która obliczy różnicę
+   w latach między a.dataRozpoczecia a b.dataRozpoczecia. Weź pod uwagę nie tylko
+   różnicę w latach, ale tez i w miesiącach oraz dniach. Nie używaj zewnętrznych bibliotek
+   takich jak *ChronoUnit* czy *Period*.
