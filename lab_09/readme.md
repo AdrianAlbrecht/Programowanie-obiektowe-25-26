@@ -1,6 +1,6 @@
 # **Programowanie Obiektowe – Java (2025Z)**
 
-# Lab 08: Programowanie generyczne
+# Lab 09: Programowanie generyczne
 
 Programowanie generyczne (ang. *generics*) to mechanizm Javy pozwalający:
 
